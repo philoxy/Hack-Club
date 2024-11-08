@@ -1,3 +1,44 @@
 <HTML>
+<head>
+	<style>
+    	body {
+        	text-align: center;
+            font-family: Arial;
+            background: #c7ffd3;
+        }
+        img {
+        	width: 400px;
+            height: 300px;
+        }
+        button {
+        	width: 200px;
+            height: 100px;
+            background: green;
+            animation-name: colourChange;
+            animation-duration: 5s;
+            animation-iteration-count: 3;
+        }
+        @keyframes colourChange {
+        	from {background: red;}
+            to {background: green;}
+        }
+        img:hover {
+        	-webkit-transform: scaleY(-1);
+            transform: scaleY(-1);
+        }
+    </style>
+</head>
 
+<body>
+	<h1>Pandas</h1>
+    <h2>Diet</h2>
+    <p>Pandas eat 26 to 84 pounds per day of bamboo!</p>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Grosser_Panda.JPG/640px-Grosser_Panda.JPG">
+    <h2>Predators</h2>
+    <p>Pandas have no natural predators.</p>
+    <a href="https://en.wikipedia.org/wiki/Giant_panda">
+    	<button>More info on pandas!</button>
+    </a>
+
+</body>
 </HTML>
